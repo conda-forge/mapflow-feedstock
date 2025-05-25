@@ -1,5 +1,5 @@
 {% set name = "mapflow" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mapflow-{{ version }}.tar.gz
-  sha256: bed26cc0024e26c0d5d0e4afe04c8e9da9da446f0ba747cd871a989d55488ef2
+  sha256: e42b98ae2a98bdaac1573e3ee261458e31f4ff283196136b12cc19aad99f645b
 
 build:
   noarch: python
@@ -25,6 +25,7 @@ requirements:
     - matplotlib-base
     - geopandas
     - tqdm
+    - ffmpeg
 
 test:
   imports:
