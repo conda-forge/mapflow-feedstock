@@ -1,5 +1,5 @@
 {% set name = "mapflow" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mapflow-{{ version }}.tar.gz
-  sha256: e42b98ae2a98bdaac1573e3ee261458e31f4ff283196136b12cc19aad99f645b
+  sha256: 6bfd97490f679f71f5b8f57d243ffaa185fbf30932388177441c7c8d47a51aa2
 
 build:
   noarch: python
